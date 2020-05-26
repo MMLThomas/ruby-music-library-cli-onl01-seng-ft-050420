@@ -82,11 +82,8 @@ class MusicLibraryController
   
   def play_song
     puts "Which song number would you like to play?"
-    song_count = 0
-    list_songs.each{|song| song_count += 1}
     input = gets.chomp
     input = input.to_i
-
     if input >= 1 && input <= list_songs.length 
       song = list_songs[(input-1)]
       puts "Playing #{song.name} by #{song.artist.name}"

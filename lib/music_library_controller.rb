@@ -26,7 +26,7 @@ class MusicLibraryController
   def list_songs
     song_num = 1
     songs = Song.all.sort{|a, b| a.name <=> b.name}.uniq
-    songs.each do |song| 
+    songs.map do |song| 
       puts "#{song_num}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
       song_num += 1
     end
@@ -77,8 +77,9 @@ class MusicLibraryController
         song_num += 1
       end
     end
-    
   end
+  
+
   
   def play_song
     puts "Which song number would you like to play?"

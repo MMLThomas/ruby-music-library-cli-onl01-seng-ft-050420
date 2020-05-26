@@ -84,13 +84,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     input = gets.chomp.to_i
     #binding.pry
-    if input > 0 && input <= list_songs.length 
-      #binding.pry
-      #song = list_songs[(input-1)]
-      #binding.pry
-      return "Playing #{song.name} by #{song.artist.name}"
-    else
-    end
+    
       
   end
   

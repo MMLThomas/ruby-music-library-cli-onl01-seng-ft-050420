@@ -89,7 +89,6 @@ class MusicLibraryController
         binding.pry
         puts "Playing #{song.name} by #{song.artist.name}"
       end
-    binding.pry
       
   end
   

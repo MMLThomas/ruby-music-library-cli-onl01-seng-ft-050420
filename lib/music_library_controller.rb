@@ -87,9 +87,8 @@ class MusicLibraryController
       if input >= 1 && input <= list_songs.length 
         song = list_songs[(input-1)]
         #binding.pry
-        puts "Playing #{song.name} by #{song.artist.name}"
+        puts "Playing #{song.name} by #{song.artist.name}" unless song == nil
       end
-      break
     end
       
   end

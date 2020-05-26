@@ -91,7 +91,7 @@ class MusicLibraryController
     #binding.pry
     if input > 0 && song_selector(input)
       song = song_selector(input)
-      puts 
+      puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
   

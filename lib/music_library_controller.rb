@@ -85,7 +85,7 @@ class MusicLibraryController
     input = gets.chomp.to_i
     #binding.pry
     if input > 0 && input <= list_songs.length
-      
+    end
   end
   
   

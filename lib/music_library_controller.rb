@@ -90,7 +90,6 @@ class MusicLibraryController
       #binding.pry
       return "Playing #{song.name} by #{song.artist.name}"
     else
-      break
     end
       
   end

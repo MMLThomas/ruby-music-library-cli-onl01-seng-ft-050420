@@ -86,6 +86,7 @@ class MusicLibraryController
     list_songs.each{|song| song_count += 1}
     input = gets.chomp
     input = input.to_i
+    binding.pry
     if input <= list_songs.length
       song = list_songs[(list_songs.length-1)]
       puts "Playing #{song.name} by #{song.artist.name}"

@@ -85,8 +85,8 @@ class MusicLibraryController
     input = gets.chomp
     input = input.to_i
     if input >= 1 && input <= list_songs.length 
-      binding.pry
       song = list_songs[(input-1)]
+      binding.pry
       puts "Playing #{song.name} by #{song.artist.name}"
     end
       

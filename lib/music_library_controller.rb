@@ -79,13 +79,19 @@ class MusicLibraryController
     end
   end
   
+  def song_selector(num)
+    songs = Song.all.sort{|a, b| a.name <=> b.name}.uniq
+    songs[num-1]
+  end
 
   
   def play_song
     puts "Which song number would you like to play?"
     input = gets.chomp.to_i
     #binding.pry
-    if input > 0 && input <= list_songs.length
+    if input > 0 && song_selector(input)
+      song = song_selector(input)
+      puts 
     end
   end
   
